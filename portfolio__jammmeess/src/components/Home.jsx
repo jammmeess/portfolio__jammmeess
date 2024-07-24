@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "./Navbar";
 // import About from "./About";
-// import Hero from "./Hero";
+import Hero from "./Hero";
 // import Experience from "./Experience";
 // import Contact from "./Contact";
 // import Footer from "./Footer";
@@ -16,7 +16,7 @@ const Home = () => {
         <Navbar />
       </div>
       <main>
-        {/* <Hero /> */}
+        <Hero />
         {/* <About /> */}
         {/* <Experience /> */}
         {/* <Projects /> */}

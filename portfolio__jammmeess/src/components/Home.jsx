@@ -12,7 +12,9 @@ import Navbar from "./Navbar";
 const Home = () => {
   return (
     <>
-      <div>{/* <Navbar /> */}</div>
+      <div>
+        <Navbar />
+      </div>
       <main>
         {/* <Hero /> */}
         {/* <About /> */}

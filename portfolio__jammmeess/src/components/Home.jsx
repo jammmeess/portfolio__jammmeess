@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import About from "./About";
 import Hero from "./Hero";
-// import Skills from "./Skills";
+import Skills from "./Skills";
 // import Experience from "./Experience";
 // import Contact from "./Contact";
 // import Footer from "./Footer";
@@ -19,7 +19,7 @@ const Home = () => {
       <main>
         <Hero />
         <About />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Experience /> */}
         {/* <Projects /> */}
         {/* <Contact /> */}

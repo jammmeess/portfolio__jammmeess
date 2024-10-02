@@ -200,7 +200,7 @@ body {
   }
 
   &__inner.subCont {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   &__imgWrap {
@@ -254,5 +254,58 @@ body {
 
   &__txtWrap {
     padding:0 100px 0 50px;
+  }
+}
+
+/*====================================================================
+* Skills * ====================================================================*/
+
+.skillSec {
+
+  &__inner {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    gap: 0px;
+  }
+
+  &__ttl {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 0.8;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+    gap: 20px 10px;
+
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 100px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid $black;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+      border: 1px solid $white;
+    }
   }
 }

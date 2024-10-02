@@ -1,0 +1,22 @@
+{
+  "name": "portfolio__jammmeess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "^6.26.2",
+    "web-vitals": "^4.2.3"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "postcss-loader": "^8.1.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.79.4",
+    "sass-loader": "^16.0.2"
+  }
+}

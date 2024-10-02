@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <section className="skillSec" id="Skills">
           <div className="skillSec__inner">
-            <h2 className="skillSec__ttl">MY<br/><span className="txtBlue">SKILLS:</span></h2>
+            <h2 className="skillSec__ttl">my<span className="txtBlue">_skills.()</span></h2>
             <ul className="skillSec__list">
               <li className="skillSec__item">HTML</li>
               <li className="skillSec__item">CSS</li>

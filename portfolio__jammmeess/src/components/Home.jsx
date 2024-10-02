@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Hero from "./Hero";
 import Skills from "./Skills";
-// import Experience from "./Experience";
+import Experience from "./Experience";
 // import Contact from "./Contact";
 // import Footer from "./Footer";
 // import Projects from "./Project";
@@ -20,7 +20,7 @@ const Home = () => {
         <Hero />
         <About />
         <Skills />
-        {/* <Experience /> */}
+        <Experience />
         {/* <Projects /> */}
         {/* <Contact /> */}
       </main>

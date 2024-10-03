@@ -1,11 +1,30 @@
-import React from "react";
-import navIcon from "../img/menu.png";
-import Logo from "../img/portfoliologo.png";
+import React, { useState, useEffect } from "react";
+import navIcon from "../img/navbar/menu.png";
+import Logo from "../img/navbar/portfoliologo.png";
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            if (offset > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <section className="navbarSec">
-            <nav className="navbar">
+            <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
                 <div className="navbar__navCont">
                     <div className="navbar__navInner">
                         <img className="navbar__navLogo" src={Logo} alt="Site Logo" />

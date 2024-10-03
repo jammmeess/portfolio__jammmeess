@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../img/hero__vidBanner.mp4";
+import Banner from "../img/hero/hero__vidBanner.mp4";
 import Resume from "../files/Bomediano_Resume.pdf"
 
 const Hero = () => {
@@ -16,14 +16,13 @@ const Hero = () => {
                                 Hello World, I am a <br/>
                                 <span className="hero__lowerTitle">Web Developer</span>
                             </h1>
-                        </div>
-                        
-                        <div className="commonBtn">\
-                            <a href={Resume} download >
-                                <button className="commonBtn__primaryBtn">
-                                    Download Resume
-                                </button>
-                            </a>
+                            <div className="commonBtn">
+                                <a href={Resume} download >
+                                    <button className="commonBtn__primaryBtn">
+                                        Download Resume
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

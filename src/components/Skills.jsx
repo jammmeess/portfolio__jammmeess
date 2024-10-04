@@ -22,8 +22,8 @@ const Skills = () => {
               <li className="skillSec__item">Adobe XD</li>
               <li className="skillSec__item">Photoshop</li>
               <li className="skillSec__item">Illustrator</li>
-              <div className="skillSec__dvdr"></div>
             </ul>
+            <div className="skillSec__dvdr"></div>
           </div>
         </section>
     );

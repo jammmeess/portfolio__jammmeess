@@ -6,7 +6,7 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Experience from "./Experience";
 // import Contact from "./Contact";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 // import Projects from "./Project";
 // import "../index.css";
 
@@ -24,7 +24,7 @@ const Home = () => {
         {/* <Projects /> */}
         {/* <Contact /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

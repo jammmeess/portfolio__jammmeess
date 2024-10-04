@@ -16,12 +16,17 @@ const Experience = () => {
               <div className="expSec__wrkCont">
                 <h3 className="expSec__wrkTtl">De Castro Consulting</h3>
                 <p className="expSec__wrkPos">Web Developer<br/> Intern</p>
-                <p className="expSec__wrkDate">January 2024 - Aprilt</p>
+                <p className="expSec__wrkDate">January 2024 - April 2024</p>
               </div>
               <div className="expSec__wrkCont">
                 <h3 className="expSec__wrkTtl">Costa Cruises</h3>
                 <p className="expSec__wrkPos">Demi Chef <br/>De Partie</p>
                 <p className="expSec__wrkDate">March 2018 - March 2023</p>
+              </div>
+              <div className="expSec__wrkCont">
+                <h3 className="expSec__wrkTtl">Ibiza Beach Club BGC</h3>
+                <p className="expSec__wrkPos">Commis <br/>De Cusine</p>
+                <p className="expSec__wrkDate">Febuary 2017 - October 2017</p>
               </div>
             </div>
           </div>

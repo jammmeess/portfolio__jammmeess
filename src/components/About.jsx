@@ -7,7 +7,7 @@ const About = () => {
         <section className="aboutSec" id="About">
             <div className="aboutSec__inner">
                 <div className="aboutSec__contntWrap">
-                    <h2 className="aboutSec__ttl">WEB <br/><span className="txtBlue">DEVELOPER</span>
+                    <h2 className="aboutSec__ttl">FRONT-END <br/><span className="txtBlue">WEB DEVELOPER</span>
                     </h2>
                     <figure className="aboutSec__imgWrap">
                         <img src={Profile} alt=""/>

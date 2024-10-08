@@ -6,7 +6,7 @@ import Resume from "../files/Bomediano_Resume.pdf"
 
 const Footer = () => {
     return (
-        <section className="footerSec" id="footer">
+        <section className="footerSec" id="Contact">
           <div className="footerSec__inner">
             <div className="footerSec__contntWrapper">
               <h2 className="footerSec__contntTtl">Get<span className="txtBlue">.inTouch()</span></h2>

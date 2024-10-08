@@ -222,32 +222,24 @@ body {
 * About * ====================================================================*/
 
 .aboutSec {
+  background: $black;
+  padding: 50px;
 
   &__inner {
     width: 100%;
-    // min-width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
     height: auto;
     margin: 0 auto;
     background: $black;
     color: $white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 30px;
-  }
-
-  &__inner.subCont {
-    padding-bottom: 50px;
   }
 
   &__imgWrap {
     margin: 0 auto;
-    padding: 0 50px;
     img {
       width: 100%;
-      max-width: 350px;
+      max-width: 550px;
       height: auto;
       padding: 10px;
       border-radius: 30px 0;
@@ -260,24 +252,19 @@ body {
 
   &__lowerContWrap {
     display: flex;
-  }
-
-  &__ttlWrap {
-    padding-right: 20px;
+    align-items: center;
   }
 
   &__ttl {
     font-size: 90px;
     font-weight: 700;
     margin: 0 auto 30px;
-    padding: 50px 50px 0;
     line-height: 0.8;
   }
 
   &__ttl.lowerTtl {
     font-size: 80px;
     text-align: end;
-    padding: 0;
     margin: 0;
     cursor: default;
     transition: 0.3s ease-in-out;
@@ -298,10 +285,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
-  &__txtWrap {
-    padding:0 100px 0 50px;
+  &__txt {
+    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -310,14 +299,18 @@ body {
 
 .skillSec {
   background: $pprWhite;
+  padding: 50px;
 
   &__inner {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction:column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: start;
-    padding: 50px 0 50px 50px;
     gap: 30px;
   }
 
@@ -369,14 +362,20 @@ body {
 * Experience * ====================================================================*/
 
 .expSec {
+  background: $black;
+  padding: 0 50px;
 
   &__inner {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background: $black;
-    padding: 80px;
+    padding: 80px 0;
     color: $white;
     gap: 30px;
   }
@@ -444,6 +443,62 @@ body {
 
   &__wrkDate {
     font-size: 12px;
+  }
+}
+
+/*====================================================================
+* Project * ====================================================================*/
+
+.projSec {
+  background: $black;
+  padding: 0 50px 100px;
+
+  &__inner {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    color: $pprWhite;
+  }
+
+  &__ttl {
+    font-size: 45px;
+    margin: 0;
+  }
+
+  &__cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__cardWrapper {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__cardFig {
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__cardTtl {
+    font-size: 30px;
+  }
+
+  &__cardTech,
+  &__cardRepo,
+  &__cardInfo {
+    font-size: 15px;
   }
 }
 

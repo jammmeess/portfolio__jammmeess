@@ -50,37 +50,66 @@ const projectsData = [
 
 const Project = () => {
   return (
-    <section className="projSec">
-      <div className="projSec__inner">
-        <h2 className="projSec__ttl">_my<span className="txtBlue">.Projects()</span></h2>
-        <div className="projSec__cardContainer">
-          <div className="projSec__cardWrapper">
-            <div className="projSec__cardFig">
-              <img src={Library} alt="" />
+    <section className="projSec" id="Projects">
+      <h2 className="projSec__ttl">MY <br/><span className="txtBlue">PROJECTS.()</span>
+        <div className="projSec__projDiv left"></div>
+      </h2>
+        <div className="projSec__inner">
+          {projectsData.map((project, index) => (
+            <div className="projSec__cardCont" key={index}>
+              <article
+                className={`postcard dark ${index % 2 === 0 ? "red" : "blue"}`}
+              >
+                <a
+                  className="postcard__img_link"
+                  href={project.liveLink}
+                  target="_blank"
+                >
+                  <img
+                    className="postcard__img"
+                    src={project.imgSrc}
+                    alt={project.title}
+                  />
+                </a>
+                <div className="postcard__text">
+                  <h1
+                    className={`postcard__title ${
+                      index % 2 === 0 ? "red" : "green"
+                    }`}
+                  >
+                    <a href={project.liveLink} target="_blank">
+                      {project.title}
+                    </a>
+                  </h1>
+                  <div className="postcard__subtitle small">
+                    <i className="fas fa-calendar-alt"></i>
+                    {project.techStack}
+                  </div>
+                  <div className="postcard__bar"></div>
+                  <div className="postcard__preview-txt">
+                    {project.githubLink && (
+                      <p>
+                        Git Repository:{" "}
+                        <a href={project.githubLink} target="_blank">
+                          <i>{project.title}</i>
+                        </a>
+                      </p>
+                    )}
+                    {project.extraInfo && (
+                      <ul className="postcard__tagbox">
+                        <li className="tag__item">
+                          <i className="fas fa-tag"></i>
+                          {project.extraInfo}
+                        </li>
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </article>
             </div>
-            <div className="projSec__cardContent">
-              <h3 className="projSec__cardTtl">Library</h3>
-              <h4 className="projSec__cardTech">HTML, CSS, Git, GitHub, GitHub Pages</h4>
-              <div className="divider"></div>
-              <h4 className="projSec__cardRepo" >Repository:</h4>
-              <h4 className="projSec__cardInfo">First Project | KodeGo</h4>
-            </div>
-          </div>
-
-          <div className="projSec__cardWrapper">
-            <div className="projSec__cardFig">
-              <img src={Library} alt="" />
-            </div>
-            <div className="projSec__cardContent">
-              <h3 className="projSec__cardTtl">Library</h3>
-              <h4 className="projSec__cardTech">HTML, CSS, Git, GitHub, GitHub Pages</h4>
-              <div className="divider"></div>
-              <h4 className="projSec__cardRepo" >Repository:</h4>
-              <h4 className="projSec__cardInfo">First Project | KodeGo</h4>
-            </div>
-          </div>
+          ))}
         </div>
-      </div>
+      <div className="projSec__projDiv"></div>
     </section>
   )
 }

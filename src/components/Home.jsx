@@ -7,7 +7,7 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 // import Contact from "./Contact";
 import Footer from "./Footer";
-// import Projects from "./Project";
+import Projects from "./Project";
 // import "../index.css";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
         <About />
         <Skills />
         <Experience />
-        {/* <Projects /> */}
+        <Projects />
         {/* <Contact /> */}
       </main>
       <Footer />

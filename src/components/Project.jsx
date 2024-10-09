@@ -23,7 +23,7 @@ const projectsData = [
     extraInfo: "Internship | De Castro Consulting",
   },
   {
-    title: "Engine_ Games",
+    title: "Engine_",
     imgSrc: Engine,
     liveLink: "/",
     techStack: "Laravel, Html, Css, Javascript, PHP, Bootstrap, mySQL",
@@ -55,59 +55,61 @@ const Project = () => {
         <div className="projSec__projDiv left"></div>
       </h2>
         <div className="projSec__inner">
-          {projectsData.map((project, index) => (
-            <div className="projSec__cardCont" key={index}>
-              <article
-                className={`postcard dark ${index % 2 === 0 ? "red" : "blue"}`}
-              >
-                <a
-                  className="postcard__img_link"
-                  href={project.liveLink}
-                  target="_blank"
+          <div className="projSec__wrapper">
+            {projectsData.map((project, index) => (
+              <div className="projSec__cardCont" key={index}>
+                <article
+                  className={`postcard dark ${index % 2 === 0 ? "red" : "blue"}`}
                 >
-                  <img
-                    className="postcard__img"
-                    src={project.imgSrc}
-                    alt={project.title}
-                  />
-                </a>
-                <div className="postcard__text">
-                  <h1
-                    className={`postcard__title ${
-                      index % 2 === 0 ? "red" : "green"
-                    }`}
+                  <a
+                    className="postcard__img_link"
+                    href={project.liveLink}
+                    target="_blank"
                   >
-                    <a href={project.liveLink} target="_blank">
-                      {project.title}
-                    </a>
-                  </h1>
-                  <div className="postcard__subtitle small">
-                    <i className="fas fa-calendar-alt"></i>
-                    {project.techStack}
+                    <img
+                      className="postcard__img"
+                      src={project.imgSrc}
+                      alt={project.title}
+                    />
+                  </a>
+                  <div className="postcard__text">
+                    <h1
+                      className={`postcard__title ${
+                        index % 2 === 0 ? "red" : "green"
+                      }`}
+                    >
+                      <a href={project.liveLink} target="_blank">
+                        {project.title}
+                      </a>
+                    </h1>
+                    <div className="postcard__subtitle small">
+                      <i className="fas fa-calendar-alt"></i>
+                      {project.techStack}
+                    </div>
+                    <div className="postcard__bar"></div>
+                    <div className="postcard__preview-txt">
+                      {project.githubLink && (
+                        <p>
+                          Git Repository:{" "}
+                          <a href={project.githubLink} target="_blank">
+                            <i>{project.title}</i>
+                          </a>
+                        </p>
+                      )}
+                      {project.extraInfo && (
+                        <ul className="postcard__tagbox">
+                          <li className="tag__item">
+                            <i className="fas fa-tag"></i>
+                            {project.extraInfo}
+                          </li>
+                        </ul>
+                      )}
+                    </div>
                   </div>
-                  <div className="postcard__bar"></div>
-                  <div className="postcard__preview-txt">
-                    {project.githubLink && (
-                      <p>
-                        Git Repository:{" "}
-                        <a href={project.githubLink} target="_blank">
-                          <i>{project.title}</i>
-                        </a>
-                      </p>
-                    )}
-                    {project.extraInfo && (
-                      <ul className="postcard__tagbox">
-                        <li className="tag__item">
-                          <i className="fas fa-tag"></i>
-                          {project.extraInfo}
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-                </div>
-              </article>
-            </div>
-          ))}
+                </article>
+              </div>
+            ))}
+          </div>
         </div>
       <div className="projSec__projDiv"></div>
     </section>

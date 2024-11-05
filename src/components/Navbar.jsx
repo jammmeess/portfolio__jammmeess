@@ -50,7 +50,7 @@ const Navbar = () => {
                                         href="#About"
                                         onClick={(e) => handleSmoothScroll(e, "About")}
                                     >
-                                        about.me()
+                                        About the Couple
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">
@@ -59,7 +59,7 @@ const Navbar = () => {
                                         href="#Skills"
                                         onClick={(e) => handleSmoothScroll(e, "Skills")}
                                     >
-                                        my.skills()
+                                        Principal Sponsors
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">
@@ -68,7 +68,7 @@ const Navbar = () => {
                                         href="#Experience"
                                         onClick={(e) => handleSmoothScroll(e, "Experience")}
                                     >
-                                        my.experience()
+                                        Secondary S
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">

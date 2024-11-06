@@ -50,7 +50,7 @@ const Navbar = () => {
                                         href="#About"
                                         onClick={(e) => handleSmoothScroll(e, "About")}
                                     >
-                                        About the Couple
+                                        about.Me()
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">
@@ -59,7 +59,7 @@ const Navbar = () => {
                                         href="#Skills"
                                         onClick={(e) => handleSmoothScroll(e, "Skills")}
                                     >
-                                        Principal Sponsors
+                                        my.Skills()
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">
@@ -68,7 +68,7 @@ const Navbar = () => {
                                         href="#Experience"
                                         onClick={(e) => handleSmoothScroll(e, "Experience")}
                                     >
-                                        Secondary S
+                                        my.workExperience()
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">
@@ -77,7 +77,7 @@ const Navbar = () => {
                                         href="#Projects"
                                         onClick={(e) => handleSmoothScroll(e, "Projects")}
                                     >
-                                        my.projects()
+                                        my.Projects()
                                     </a>
                                 </li>
                                 <li className="navbar__navListItem">
@@ -86,7 +86,7 @@ const Navbar = () => {
                                         href="#Contact"
                                         onClick={(e) => handleSmoothScroll(e, "Contact")}
                                     >
-                                        contact.me()
+                                        contact.Me()
                                     </a>
                                 </li>
                             </ul>

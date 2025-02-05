@@ -1,0 +1,89 @@
+/*====================================================================
+* Experience * ====================================================================*/
+
+.expSec {
+  background: $black;
+  padding: 100px 50px 2px;
+  border-radius: 0 150px 0 0;
+  border-top: 10px solid $drkBlue;
+
+
+  &__inner {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    color: $white;
+    gap: 30px;
+  }
+
+  &__ttlCont {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  &__wrkCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    &:hover {
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
+      cursor: default;
+    }
+  }
+
+  &__ttl {
+    font-size: 45px;
+  }
+
+  &__wrkTtl,
+  &__wrkPos,
+  &__wrkDate {
+    margin: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__wrkTtl {
+    font-size: 28px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -29px;
+      transform: translate(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background: $drkBlue;
+    }
+  }
+
+  &__wrkPos {
+    font-size: 18px;
+    margin: 5px 0;
+    line-height: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -29px;
+      transform: translate(-50%);
+      width: 3px;
+      height: 95px;
+      background: $drkBlue;
+    }
+  }
+
+  &__wrkDate {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,110 @@
+/*====================================================================
+siteFooter
+====================================================================*/
+/*====================================================================
+* Footer * ====================================================================*/
+
+.footerSec{
+  background: $black;
+  padding: 100px 0;
+
+  &__inner {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    background: $black;
+    color:$pprWhite;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  &__contntWrapper {
+    width: 33.3%;
+  }
+
+  &__cntctWrapper {
+    width: 33.3%;
+    border: 10px solid $pprWhite;
+    border-radius: 11px;
+    box-shadow: 10px 11px $shdwGray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:30px 30px 50px;
+  }
+
+  &__contntTtl {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__linkWrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__socialIcon {
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+    filter: invert(100%);
+    transition: filter 0.3s ease-in-out;
+
+    &:hover {
+      filter: invert(100%) drop-shadow(1px 1px 3px rgba(255,255,255,0.9));
+    }
+  }
+
+  &__cntctTtl {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__cntctNo {
+    transition: 0.3s ease-in-out;
+    cursor: default;
+    margin: 40px 0 0;
+    font-style: italic;
+    &:hover {
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
+    }
+  }
+
+  &__rsmDlLink {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: 0.3s ease-in-out;
+
+    &::after {
+      content: "→";
+      position: absolute;
+      top:40px;
+      right: -50px;
+      transform: translate(-50%);
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        filter: drop-shadow(1px 1px 3px rgba(255,255,255,0.9)) invert(100%);
+      }
+    }
+
+    &:hover {
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
+    }
+  }
+
+  &__link {
+    margin: 40px 0 0;
+    font-style: italic;
+  }
+}

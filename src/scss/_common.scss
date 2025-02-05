@@ -1,0 +1,154 @@
+/*====================================================================
+COMMON LAYOUT
+====================================================================*/
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  // Liquid
+  @include u-mqMax() {
+    font-size: calc(10vw / 14.40);
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    font-size: calc(10vw / 3.75);
+  }
+}
+body {
+  @include fontFeature;
+  -webkit-print-color-adjust: exact;
+
+  // Liquid
+  @include u-mqMax() {
+
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+
+  }
+}
+
+/*-----------------------------------------------
+PC/SP
+------------------------------------------------*/
+// PC
+.u-pcDb {
+  display: block;
+}
+.u-pcDib {
+  display: inline-block;
+}
+.u-pcDin {
+  display: inline;
+}
+.u-pcDf {
+  display: flex;
+}
+.u-pcDt {
+  display: table;
+}
+.u-pcDtc {
+  display: table-cell;
+}
+
+.u-spDb,
+.u-spDib,
+.u-spDin,
+.u-spDf,
+.u-spDt,
+.u-spDtc {
+  display: none;
+}
+
+// SP
+@include u-mqMax($maxW: $windowSP) {
+  .u-pcDb,
+  .u-pcDib,
+  .u-pcDin,
+  .u-pcDf,
+  .u-pcDt,
+  .u-pcDtc {
+    display: none;
+  }
+
+  .u-spDb {
+    display: block;
+  }
+  .u-spDib {
+    display: inline-block;
+  }
+  .u-spDin {
+    display: inline;
+  }
+  .u-spDf {
+    display: flex;
+  }
+  .u-spDt {
+    display: table;
+  }
+  .u-spDtc {
+    display: table-cell;
+  }
+}
+
+/*-----------------------------------------------
+main
+------------------------------------------------*/
+.siteContent {
+  min-height: calc(100vh - #{$headerHeightPC + $headerHeightPC});
+  padding-top: $headerHeightPC;
+
+  .is_login_user & {
+  }
+
+  // SP
+  @include u-mqMax($maxW: $windowSP) {
+    min-height: calc(100vh - #{$footerHeightSP});
+    padding-top: $headerHeightSP;
+  }
+}
+
+/*====================================================================
+* Common * ====================================================================*/
+
+.commonBtn {
+  &__primaryBtn {
+    width: auto;
+    min-height: 50px;
+    border-radius: 5px;
+    border: 2px solid $white;
+    background-color: $black;
+    box-shadow: 4px 4px $white;
+    font-size: 17px;
+    font-weight: 600;
+    color: $white;
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      border: 2px solid $black;
+      background-color: $white;
+      box-shadow: 4px 4px $black;
+      color: $black;
+    }
+  }
+
+  &__primaryBtn:active {
+    box-shadow: 0px 0px $black;
+    transform: translate(3px, 3px);
+  }
+}
+
+.txtBlue {
+  color: $drkBlue;
+}
+
+.blueDvdr {
+  background: $drkBlue;
+  width: 100%;
+  max-width: 700px;
+  height: 5px;
+}
+

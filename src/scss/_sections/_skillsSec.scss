@@ -3,11 +3,11 @@
 
 .skillSec {
   background: $pprWhite;
-  padding: 100px 50px;
+  padding: 10rem 5rem;
 
   &__inner {
     width: 100%;
-    max-width: 1440px;
+    max-width: 144rem;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -15,14 +15,14 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: start;
-    gap: 30px;
+    gap: 3rem;
   }
 
   &__ttl {
-    font-size: 90px;
+    font-size: 9rem;
     font-weight: 700;
     line-height: 0.8;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     margin-top: 0;
   }
 
@@ -34,30 +34,30 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    gap: 20px 10px;
+    gap: 2rem 1rem;
 
   }
 
   &__item {
     width: 100%;
-    max-width: 100px;
+    max-width: 10rem;
     list-style: none;
-    padding: 10px;
-    border: 1px solid $black;
+    padding: 1rem;
+    border: 0.1rem solid $black;
     transition: 0.3s ease-in-out;
     cursor: default;
 
     &:hover {
       color: $white;
       background-color: $black;
-      border: 1px solid $white;
+      border: 0.1rem solid $white;
     }
   }
 
   &__dvdr {
     width: 100%;
-    max-width: 700px;
-    height: 5px;
+    max-width: 70rem;
+    height: 0.5rem;
     background-color: $black;
   }
 }

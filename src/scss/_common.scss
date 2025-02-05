@@ -17,6 +17,9 @@ html {
 body {
   @include fontFeature;
   -webkit-print-color-adjust: exact;
+  font-family: $Sofia;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
 
   // Liquid
   @include u-mqMax() {

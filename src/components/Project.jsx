@@ -51,8 +51,8 @@ const projectsData = [
 const Project = () => {
   return (
     <section className="projSec" id="Projects">
-      <h2 className="projSec__ttl">MY <br/><span className="txtBlue">PROJECTS.()</span>
-        <div className="projSec__projDiv left"></div>
+      <h2 className="projSec__ttl" data-aos="fade-zoom-in" data-aos-duration="1000">MY <br/><span className="txtBlue">PROJECTS.()</span>
+        <div className="projSec__projDiv left" data-aos="fade-right" data-aos-duration="1000"></div>
       </h2>
         <div className="projSec__inner">
           <div className="projSec__wrapper">
@@ -61,11 +61,7 @@ const Project = () => {
                 <article
                   className={`postcard dark ${index % 2 === 0 ? "red" : "blue"}`}
                 >
-                  <a
-                    className="postcard__img_link"
-                    href={project.liveLink}
-                    target="_blank"
-                  >
+                  <a className="postcard__img_link" href={project.liveLink} target="_blank" >
                     <img
                       className="postcard__img"
                       src={project.imgSrc}

@@ -1,4 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 import Navbar from "./Navbar";
 import About from "./About";
@@ -10,6 +13,12 @@ import Footer from "./Footer";
 import Projects from "./Project";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <div>

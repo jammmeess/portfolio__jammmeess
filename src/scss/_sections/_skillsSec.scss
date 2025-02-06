@@ -39,8 +39,7 @@
   }
 
   &__item {
-    width: 100%;
-    max-width: 10rem;
+    width: fit-content;
     list-style: none;
     padding: 1rem;
     border: 0.1rem solid $black;
@@ -54,10 +53,11 @@
     }
   }
 
-  &__dvdr {
-    width: 100%;
-    max-width: 70rem;
-    height: 0.5rem;
-    background-color: $black;
-  }
-}
+
+    &__dvdr {
+      width: 100%;
+      max-width: 70rem;
+      height: 0.5rem;
+      background-color: $black;
+    }
+  }  

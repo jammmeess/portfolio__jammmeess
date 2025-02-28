@@ -24,6 +24,7 @@ const Skills = () => {
               <li className="skillSec__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800">Adobe XD</li>
               <li className="skillSec__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1900">Photoshop</li>
               <li className="skillSec__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">Illustrator</li>
+              <li className="skillSec__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">Figma</li>
             </ul>
             <div className="skillSec__dvdr" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1900"></div>
           </div>

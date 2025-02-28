@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import navIcon from "../img/navbar/menu.png";
-import Resume from "../files/Bomediano_Resume.pdf";
 import Logo from "../img/navbar/portfoliologo.png";
 
 const Navbar = () => {
@@ -42,7 +41,7 @@ const Navbar = () => {
                         <a href="#">
                             <img className="navbar__navLogo" src={Logo} alt="Site Logo" />
                         </a>
-                        <div className="navbar__linkWrap">
+                        <div className="navbar__linkWrap u-pcDb">
                             <ul className="navbar__navList">
                                 <li className="navbar__navListItem">
                                     <a
@@ -91,6 +90,55 @@ const Navbar = () => {
                                 </li>
                             </ul>
                         </div>
+                        {/* <div className="navbar__linkWrapSp">
+                            <ul className="navbar__navListSp">
+                                <li className="navbar__navListItemSp">
+                                    <a
+                                        className="navbar__navLinkSp"
+                                        href="#About"
+                                        onClick={(e) => handleSmoothScroll(e, "About")}
+                                    >
+                                        about.Me()
+                                    </a>
+                                </li>
+                                <li className="navbar__navListItemSp">
+                                    <a
+                                        className="navbar__navLinkSp"
+                                        href="#Skills"
+                                        onClick={(e) => handleSmoothScroll(e, "Skills")}
+                                    >
+                                        my.Skills()
+                                    </a>
+                                </li>
+                                <li className="navbar__navListItemSp">
+                                    <a
+                                        className="navbar__navLinkSp"
+                                        href="#Experience"
+                                        onClick={(e) => handleSmoothScroll(e, "Experience")}
+                                    >
+                                        my.workExperience()
+                                    </a>
+                                </li>
+                                <li className="navbar__navListItemSp">
+                                    <a
+                                        className="navbar__navLinkSp"
+                                        href="#Projects"
+                                        onClick={(e) => handleSmoothScroll(e, "Projects")}
+                                    >
+                                        my.Projects()
+                                    </a>
+                                </li>
+                                <li className="navbar__navListItemSp">
+                                    <a
+                                        className="navbar__navLinkSp"
+                                        href="#Contact"
+                                        onClick={(e) => handleSmoothScroll(e, "Contact")}
+                                    >
+                                        contact.Me()
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> */}
                     </div>
                 </div>
             </nav>

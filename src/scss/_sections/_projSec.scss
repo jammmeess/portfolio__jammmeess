@@ -5,13 +5,22 @@
   background: $black;
   padding: 10rem 0;
 
+  @include u-mqMax {
+    padding: 5rem 2rem;
+  }
+
   &__ttl {
     margin: 0;
     padding: 0 5rem 5rem;
-    font-size:90px;
+    font-size: 9rem;
     line-height: 0.9;
     color: $pprWhite;
     text-align: start;
+
+    @include u-mqMax {
+      font-size: 4rem;
+      padding: 0 0  3rem;
+    }
   }
 
   &__inner {
@@ -43,9 +52,9 @@
 
   @media only screen and (max-width: 768px) {
     .container {
-      width: 100%; 
+      width: 100%;
       height: auto;
-      padding: 1rem; 
+      padding: 1rem;
     }
   }
 
@@ -138,6 +147,10 @@
       position: relative;
       display: flex;
       flex-direction: column;
+
+      @include u-mqMax {
+        align-items: flex-start;
+      }
     }
 
     .postcard__preview-txt {
@@ -194,7 +207,6 @@
 
       .postcard__title {
         font-size: 2rem;
-
       }
 
       .postcard__tagbox {
@@ -303,7 +315,11 @@
     );
   }
   .blue:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, $main-blue-rgb-015, transparent 50%);
+    background-image: linear-gradient(
+      30deg,
+      $main-blue-rgb-015,
+      transparent 50%
+    );
   }
 
   .postcard .postcard__tagbox .red.play:hover {
@@ -316,10 +332,18 @@
     background-color: $main-red;
   }
   .red::before {
-    background-image: linear-gradient(-30deg, $main-red-rgb-015, transparent 50%);
+    background-image: linear-gradient(
+      -30deg,
+      $main-red-rgb-015,
+      transparent 50%
+    );
   }
   .red:nth-child(2n)::before {
-    background-image: linear-gradient(30deg, $main-red-rgb-015, transparent 50%);
+    background-image: linear-gradient(
+      30deg,
+      $main-red-rgb-015,
+      transparent 50%
+    );
   }
 
   .postcard .postcard__tagbox .yellow.play:hover {
@@ -412,12 +436,17 @@
   &__projDiv {
     padding: 3rem;
     border-bottom: 0.5rem solid $drkBlue;
-    width:50%;
+    width: 70%;
     float: right;
-  }
 
-  &__projDiv.left {
-    padding-top: 0.5rem;
-    float: none;
+    &.left {
+      padding-top: 0.5rem;
+      float: none;
+    }
+
+    @include u-mqMax {
+      padding: 1.5rem;
+      width: 100%;
+    }
   }
 }

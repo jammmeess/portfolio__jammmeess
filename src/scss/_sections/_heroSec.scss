@@ -17,6 +17,10 @@
       position: relative;
       z-index: -2;
       transform: scale(2);
+
+      @include u-mqMax {
+        transform: scale(4);
+      }
     }
 
     &__container {
@@ -25,36 +29,55 @@
 
     &__inner {
       position: absolute;
-      top: 50% ;
+      top: 50%;
       left: 0;
       transform: translateY(-50%);
       margin: 0 auto;
       padding: 0 10rem;
+
+      @include u-mqMax {
+        padding: 0 2rem;
+      }
     }
 
     &__title {
       margin-bottom: 4rem;
-      font-size: 7rem;
+      font-size: 6rem;
       font-weight: 700;
-      line-height: 1.2 ;
+      line-height: 1.2;
       color: $white;
+
+      @include u-mqMax {
+        font-size: 3.5rem;
+      }
     }
 
     &__lowerTitle {
       position: relative;
-    }
 
-    &__lowerTitle::after {
-      content: "";
-      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-      width: 35rem;
-      height: 1rem;
-      position: absolute;
-      bottom: 0.5rem;
-      left: 0;
-      z-index: -1;
-      border-radius: 3rem 0 3rem 0;
-      opacity: 0.8;
+      &::after {
+        content: "";
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        width: 35rem;
+        height: 1rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0;
+        z-index: -1;
+        border-radius: 3rem 0 3rem 0;
+        opacity: 0.8;
+      }
+
+      @include u-mqMax {
+        &::after {
+          width: 30rem;
+        }
+      }
     }
   }
 }

@@ -6,7 +6,11 @@ siteFooter
 
 .footerSec{
   background: $black;
-  padding: 100px 0;
+  padding: 10rem 0;
+
+  @include u-mqMax {
+    padding: 5rem 2rem;
+  }
 
   &__inner {
     width: 100%;
@@ -21,10 +25,19 @@ siteFooter
     justify-content: center;
     gap: 30px;
     margin: 0 auto;
+
+    @include u-mqMax {
+      flex-direction: column;
+      margin: 0 ;
+    }
   }
 
   &__contntWrapper {
     width: 33.3%;
+
+    @include u-mqMax {
+      width: 100%;
+    }
   }
 
   &__cntctWrapper {
@@ -37,12 +50,20 @@ siteFooter
     align-items: flex-start;
     justify-content: flex-start;
     padding:30px 30px 50px;
+
+    @include u-mqMax {
+      width: 100%;
+    }
   }
 
   &__contntTtl {
     font-size: 50px;
     font-weight: 400;
     margin: 0;
+  }
+
+  &__contntTxt {
+    margin-top:  2rem;
   }
 
   &__linkWrapper {

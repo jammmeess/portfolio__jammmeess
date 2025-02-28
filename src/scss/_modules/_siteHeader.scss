@@ -16,13 +16,17 @@
     z-index: 1;
     transition: background-color 0.3s ease;
 
+    @include u-mqMax {
+      max-width: 37.5rem;
+    }
+
     &__navLogo {
-      width: 25px;
+      width: 2.5rem;
       height: auto;
     }
 
     &__navCont {
-      padding: 10px 20px;
+      padding: 1rem 2rem;
     }
 
     &__navInner {
@@ -30,6 +34,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
+
+      @include u-mqMax {
+        align-items: start;
+      }
     }
 
     &__linkWrap {
@@ -37,6 +45,10 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      @include u-mqMax {
+        display: none;
+      }
     }
 
     &__navList {
@@ -48,17 +60,22 @@
     }
 
     &__navListItem {
-      margin: 0 10px;
+      margin: 0 1rem;
       position: relative;
 
       &::after {
         content: "";
         position: absolute;
         width: 0;
-        height: 5px;
-        bottom: -10px;
+        height: 0.5rem;
+        bottom: -1rem;
         left: 0;
-        background: linear-gradient(90deg, rgb(15, 8, 161) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(
+          90deg,
+          rgb(15, 8, 161) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
         border-radius: 30px 0 30px 0;
         transition: width 0.6s ease-in-out;
       }
@@ -76,7 +93,39 @@
     }
 
     &__navLink:hover {
-      text-shadow: 1px 1px 3px rgba(255,255,255,0.65);
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.65);
     }
+
+    // &__linkWrapSp {
+    //   display: none;
+
+    //   @include u-mqMax {
+    //     display: block;
+    //     max-width: 100%;
+    //     background: $pprWhite;
+    //     margin-left: 1rem;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     position: relative;
+    //     top: 1rem;
+    //   }
+    // }
+
+    // &__navListSp {
+    //   color: $black;
+    //   @include u-flex($fd: column);
+    //   gap: 2rem;
+    //   padding: 2rem;
+    // }
+
+    // &__navListItemSp {
+    //   color: $black;
+    //   list-style-type: none;
+    // }
+
+    // &__navLinkSp {
+    //   color: $black;
+    //   text-decoration: none;
+    // }
   }
 }

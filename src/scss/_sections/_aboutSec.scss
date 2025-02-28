@@ -7,6 +7,11 @@
   border-radius: 0 0 0 15rem;
   border-bottom: 1rem solid $drkBlue;
 
+  @include u-mqMax {
+    padding: 5rem 2rem;
+    border-radius: 0;
+  }
+
   &__inner {
     width: 100%;
     max-width: 144rem;
@@ -26,10 +31,16 @@
       padding: 1rem;
       border-radius: 3rem 0;
     }
+
+    @include u-mqMax {
+      img {
+        padding: 0;
+      }
+    }
   }
 
   &__contntWrap {
-    width:100%;
+    width: 100%;
   }
 
   &__lowerContWrap {
@@ -42,17 +53,26 @@
     font-weight: 700;
     margin: 0 auto 3rem;
     line-height: 0.8;
-  }
 
-  &__ttl.lowerTtl {
-    font-size: 8rem;
-    text-align: end;
-    margin: 0;
-    cursor: default;
-    transition: 0.3s ease-in-out;
+    &.lowerTtl {
+      font-size: 8rem;
+      text-align: end;
+      margin: 0;
+      cursor: default;
+      transition: 0.3s ease-in-out;
 
-    &:hover {
-      text-shadow: 0.1rem 0.1rem 0.3rem rgba(255,255,255,0.9);
+      &:hover {
+        text-shadow: 0.1rem 0.1rem 0.3rem rgba(255, 255, 255, 0.9);
+      }
+    }
+
+    @include u-mqMax {
+      font-size: 5rem;
+
+      &.lowerTtl {
+        font-size: 4rem;
+        text-align: start;
+      }
     }
   }
 
@@ -61,6 +81,12 @@
     font-size: 5rem;
     font-weight: 400;
     margin: 0;
+
+    @include u-mqMax {
+      padding: 2rem 0 0;
+      font-size: 2.5rem;
+      text-align: start;
+    }
   }
 
   &__lowerContntWrap {
@@ -68,11 +94,25 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @include u-mqMax {
+      @include u-flex($ai: start, $fd: column-reverse);
+    }
   }
 
   &__txt {
     width: 100%;
     max-width: 60rem;
     font-size: 1.6rem;
+
+    @include u-mqMax {
+      margin-top: 0;
+    }
+  }
+
+  &__ttlWrap {
+    @include u-mqMax {
+      @include u-flex($fd: column);
+    }
   }
 }

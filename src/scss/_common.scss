@@ -3,10 +3,11 @@ COMMON LAYOUT
 ====================================================================*/
 html {
   font-size: 62.5%; // 1rem = 10px
+  overflow-x: hidden !important;
 
   // Liquid
   @include u-mqMax() {
-    font-size: calc(10vw / 14.40);
+    font-size: calc(10vw / 14.4);
   }
 
   // SP
@@ -20,15 +21,14 @@ body {
   font-family: $Sofia;
   font-size: 1.6rem;
   letter-spacing: 0.02em;
+  overflow-x: hidden !important;
 
   // Liquid
   @include u-mqMax() {
-
   }
 
   // SP
   @include u-mqMax($maxW: $windowSP) {
-
   }
 }
 
@@ -155,3 +155,18 @@ main
   height: 5px;
 }
 
+/*====================================================================
+* Animation * ====================================================================*/
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1.5s infinite;
+}

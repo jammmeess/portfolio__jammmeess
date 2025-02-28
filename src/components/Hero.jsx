@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../img/hero/hero__vidBanner.mp4";
-import Resume from "../files/Bomediano_Resume.pdf";
+import Resume from "../files/Bomediano_resume.pdf";
+
 
 
 

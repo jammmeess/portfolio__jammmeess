@@ -6,6 +6,18 @@
   padding: 10rem 5rem;
   border-radius: 0 0 0 15rem;
   border-bottom: 1rem solid $drkBlue;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    background: $pprWhite;
+  }
 
   @include u-mqMax {
     padding: 5rem 2rem;

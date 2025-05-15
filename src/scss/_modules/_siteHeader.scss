@@ -3,6 +3,7 @@
 
 .navbarSec {
   transition: background-color 0.3s ease;
+  z-index: 2;
 
   .navbar--scrolled {
     background-color: rgba(0, 0, 0, 0.8);
@@ -13,7 +14,7 @@
     height: auto;
     color: $white;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     transition: background-color 0.3s ease;
 
     @include u-mqMax {
